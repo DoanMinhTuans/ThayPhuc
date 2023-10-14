@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart</title>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Quicksand&display=swap');
+                .picnike{
+                        text-align: center;
+                        
+                }
+                .nikeshoes{
+                        height: 284px;
+                        line-height: 0.1;
+                }
+                .btn{
+                        text-align: center;
+                        
+                }
+                h1{
+                        text-align: center;
+                        font-family: 'Quicksand', sans-serif;
+
+                }
+                .all-product{
+                        display: flex;
+                        
+                }
+
+        </style>
+</head>
+<body>
+        <div class="all-product">
+        <div class="t_product_v1">
+        <div class="picnike">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f8f7c9f1-36f7-4138-aae3-94aba28321fa/jumpman-mvp-shoes-JV1HCs.png" alt="sneaker" class="nikeshoes">
+        </div>
+        <h1>Nike shoes</h1>
+        <h1>300$</h1>
+        <div class="btn">
+                <input type="number" value="" id="quantity">
+                
+        </div>
+        </div>
+        <div class="t_product_v2">
+                <div class="picnike">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUQExAVExIWFRcSFRAXExcSGBgWGBYXFhUXGRkaHjQiHhooGxUVITEjJikrLy4uFyA1ODYxNyotLisBCgoKDg0ODg0NFSsZFRkrKysrMistNysrLSsrKysrKy0wKystLSs4LSsrKysrKys3LSssKysrKysrLSsrKystK//AABEIAPsAyQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgIDBAUHAQj/xABHEAACAQICBwMHBgwFBQAAAAAAAQIDEQQhBQYSMUFRYRNxgQciUpGh0fAWMlVikuEUFTNCU3KCk6KxwdIXI0NEYyRzg+Lx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwDtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAi+vmty0fTjsxU61RtQg77KUbbUpWztmlZb2yN6K8rtJ5YmhKH/JTe2u9xeaXiwOmA0ei9b8DiEnSxlJ3yUZTVOV+WzOzN4AAAAAAAAAAAAAAAAAAAAAAAAAAAA8btm3Zb2z0hnlK1keGo/g9KVq9Zb/0dPdKfe80vF8AOa+UPS6xGJqNLanlThHhSpRd0v8AuSd5P0drZ33tFKeFSzlm/Yi7XxMIXSzlxe/Pq+eftMCWOae1dPkvVyv8eyi/Ww2bkvNb39e+LJLq55TMbglGlLZxFGKSUJ74xW5Rks13O6XIiUca5q9rcOJalL4+GB9Cas+U3A4u0ZVPwer+jqtRTf1Z7n42fQmad8+HM+RZUk/uJHqzrdjsBZUa23SX+3qXnDwXD9log+mAc71c8reErtU8TGWFqbry86m/2rXXirdSerG0nT7btYdlba7XbjsW57V7WAvlKqK7jtLaWbjdXSe5tEQxOsVXGN08C+zoXcZ6QlHfbJrDwl85/Xktnknwv6I0TSw2dGN6je1OtN7dSo+LnN5tssEqBpIa04dUqtWrJ0OxajWp1FaUJNXilb56kvmuN0/B25XrH5ZK05OOEgqNNbqkkpzfWzvFd1n3kHbwfONPylaTf++f7qj/AGHX/JhrLPH4Pbqvar0pulUnZRUvzoyssvmtJ5LNMCXgAAAAAAAAAAAYeltK0cLTdavUVOmsrvi+Cilm30QFWlNIU8PSnXqy2acI7Un/ACS6t2S7z5s1o1jqYqvOq24ucm9+5LKMV9VJJcN3ebvyg671NIyVOmnTw0HeMG0pTlu258L77Lhz5RKjh7ZyfqvnvfVbl/LkBj7PO9+vvfjx59THrrm7t8L793Fv49rysTVsmoq3h4cF0XxYs4ak23N9y3ri+4ou0aFla3s+4vql3+0pi/jL3ns5/GXuA8ff7f8A2KHNc1617ylybajFOUm7RjFNtvkkldvohJbLcZqUZRbi472pRdpJ3yWaatYDP0Xoqri5bFGl2lt8slGHWU2rL+fK5NdFas4XCL/qav4TK+12Ln2dGLta+9OT6v1HP44xqOx2tbY37CmlHrkkWHOPoN985fyuB2yrrphIJbVeEIpKMacFdJLckoqyRq8f5U6UE1QozqPhKdoR77K9/WjkjqvcopJ77RV/XYxpVndpu1gNzrNrDVxdR1arTlZRUUrJRTbS7vOe++97zR7S4s8cuni8/uKbAZuAp9rVpUYuzq1IUlJq6TnJRTtx3nfvI5otYehioqTnFYyrSjUas5qklDatwu9pnAdD4pUcRh67V1Tr0qjXNRmpW9h9KeTDCunozD7TvKopVpPm6k5ST9TiNEqABAAAAAAADWaxado4Ki69aVlujBfOnL0Yri/5cQLmm9L0sJRliK0rQit3GUuEYrjJnzrrZrNXx9Z1aj81X7OiruMI8rc913x9SWbrPrBiNIVe1qebTTap0U/NhG3D0m8ry491ko68PJb438PHkwPYtrn/ABe4tV6nP+i4vovj+GqpJW4L1L43+314NWo28vZtf0fQoN7bsrZ93v7/AIyNpGmkrJWS+OCMHBRteTuurvu9SOlaqeT2dXZrYtSp0spRoZxqzX1r/k4/xd2TAjmgNUcTjVKdGMVCOTqTk4RcvQi7Zy9i4tHmj9SMZVqulKlKhsu06lRNRX6tn57t6Lt1R3Klh4wjGnGChCKtCnFbKiuSXxxK3JJWnu4c13e4oi2rmqdDCLzI7VVq0q8rObXFL0Y9FyzuYesmqOGxbc3Hsar/ANWmrXf1o7n37ySPEf5k6aWUYwfaKSablfJK900o53S+ct5TKIHFtOalYvDXlsdtS/S0k5fah86PtXUjdj6MimtxqNM6sYXFXdWilP8ATU/Mn4tZS8UyDhZRUw+0uUlu69H7/hT7TPk1rwvLD1I14+g7U6nt81+tEOxOEnSlsVKcqc/RlFxfer711A1GzZ2as1vW4WNpKKllJJ23c13PeWqmEis03v4q4HmhsDOvVjRpx2pylGMY/Wvl4f0TPrTR+EjRpU6Mfm04Rpx7oxUV/I4l5EdHy/D6lRWcaVBqUuUptKK72tr1M7oQAAAAAApqTUU5SajFK7k3ZJLe23uRotZNbsPg7xlLtK3ChBpy/ae6K78+SZxzXHWbF43KdTZpXusPDzY9L5+c+r8LbgJprb5WadJulglGrNZOvK/Zr9SO+XfkuVzmOIxtfGVXXxNSVVr0r26JJZJLklY1tOnnm877s/6Jey5tKaUUkvh+oouy+Pixblb4sNr4yN5onVTF4izhScIP/UqN04964tdUmgIzVo7WTzXj7yrReqVbGT2MPTcmvnTaShG/GUmlbfuvd8Ezp2jfJtCLUsRWdRcaUI7CfRzedu5RfUm2GhClBUqdONOnHKMIpJeC58294EY1R1DoYLZnJKviI5qo42hB/wDHF/nfWeeWViXqDedm3zKHWfP1bvvLFSd+vjn424AXql1y720jHnTe+6v3+4p2vjd6jxsoh2qWq+Jw+Iq161Si1VTyjOcntOSk3nBLftceJK5UH6Xs+8uOXxxPLhVnsX6X8P3nux19hcPNkClW6+te4x8dgKVaOxUpqcfRklJd+a3mVsnsYgRb/DrAN37Kfd21RJepl9eT7AJfkZfvqv8AcSeKKmyDzUzQFDBwqKjFpTmpSvJzd0rLN52z3dWSIxdHUtmHfn7jKIgAABo9dtJTw+Dq1af5SyhF3tsub2drvW9dbG8NVrTox4nC1KKdpNbUf1ovaS8bW8QPnqtims5XTbu3K+be93azZZliL/Hu9xsMTTlBuLundprrxNzqroLCYmps1pSjNK8acWqcalr7V2le6y3We98GBFMPhnOaUIOc3uhFOTk+ait78CZaI1BxFSzquNCPJ2nU+ysl4u/Q6FgNH0qEdijTjTjx2VZv9Z75eLZlKZRqtD6q4bDWcYbc1n2s7VJ964R/ZSZu4z/+vO/r4FuKlLcvFmu0ppHD0E+2xEU/QT2pfZjmUbac1zXs+PAtVcVCKcpTUYpZybUUl1fBEH1ZxWkcdOtOhGlGgm1CdWDUFm7KMoq8pq2e9J8txsf8N69eptYzHbUFZqNNZ7s7bS2YZ3WUXfoSjYT1pwd0vwqm23ZJNybfBLmbqhh5zipKD2XmtpbD73GVn7C/oLVfCYP8hQjGfGrLz6j/AG5Z+CsjcCjR/i+r6K9aPPxbV9FfaRvQKND+Lqvo/wAS94/F9T0PbH3m+Aoh2P0rQoT7KtWhSna6jN7N1zV8muqMuNSLzUk080737rG107oOhjKfY16anHfGW6UH6UJb0/hnN62hcdolylC2LwEYyqSu1GVOKzd03dNLO8bp55CiaXXMJrn7TW6E0tQxcNujO7/OpvKUe9cuqyM2VOxVX1Jc0WIaVowxFPD1W4uacotrzHbhtc91+9czxGv1j0bTxGHkpzVPYTqQrO1qcop+c7/m2umuKbAnYNdq7UnLC4edR3qSo05See9xTe/PjxNiZQAAAom5cEn42KwBB9b9UfwtupCh2db9JCrFKX68JKz78n1IHU1C0pCScKUZWd1ONSNOSa3NZ5PxO6ADn+DxGPjCPaaMqOovnOE6TjLqryTT8Ga3SeP0y5NUdHOEODkozn1/PtvOpAUcLxeE03V/K0MW4+jTcKaa7k7ewqwGh6tLOWruIrvf/nV9pfYjaL8UzuQA5vS1w0pCKhHV+pGMUoxgpJJJZJJLcir5baV+gav2jowA5x8t9K/QNX7Q+W+lfoGt9o6OAOdfLXSv0DV+2j35Z6W+gav217zogA538sdL/QNT94vePlfpf6Cn+8j7zogA558rtMfQU/3sPee/KzTH0FL99D+46EAOE6Y0BpCrWWIw+h6uDq3u3Sr01Fvmo7Xmvuy6Ek0BiNMR83FYCdSFvykeyU+l12myzqQAgOJxGNt/l6LrN/XqUoL2Sb9hj4OlpByU62jVVaacYSqwVOLTumoXzkss5Xs91jowLRpMJjcbL5+FhD/yJmzoOp+eoroszIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z" alt="sneaker" class="nikeshoes">
+                </div>
+                <h1>Nike shoes1</h1>
+        <h1>500$</h1>
+        <div class="btn">
+                <input type="number" value="" id="quantity_shoes_1">
+        </div>
+        </div>
+        </div>
+        <div class="btn">
+                <input type="button" value="add to cart" onclick="add()" style="text-align: right;">
+        </div>
+        
+        <script>
+                
+                function add() {
+                        let a = document.getElementById('quantity').value
+                        let b = document.getElementById('quantity_shoes_1').value
+                        if (a == 0 || b == 0) {
+                                alert('ban phai them so luong vao')
+                        }
+                        else if(a < 0 || b < 0){
+                                alert('error')
+                        }
+                        else{
+                                alert('Ban da them vao gio hang thanh cong\n' + 'Ban phai tra ' + a * 800 +'$' )
+                        }
+
+                }
+
+        </script>
+</body>
+</html>
