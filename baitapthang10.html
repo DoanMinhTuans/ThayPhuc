@@ -23,14 +23,14 @@
                                 <input type="button" value="Add to cart" onclick="add1()" style="height: 100px; width: 200px; border: none; border-radius: 30px;">
                         </div>
                 </div>
-                <div class="product">
+                <!-- <div class="product">
                         <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/459619/item/vngoods_55_459619.jpg?width=320" alt=" jacket" class="jacketlight">
                         <h1>170$</h1>
                         <input type="number" class="quantity" id="quantity_pro3">
                         <div class="btn">
                                 <input type="button" value="Add to cart" onclick="add2()" style="height: 100px; width: 200px; border: none; border-radius: 30px;">
                         </div>
-                </div>
+                </div> -->
         </div>
         <!-- <div class="btn">
                 <input type="button" value="Add to cart" onclick="add()" style="height: 100px; width: 200px; border: none; border-radius: 30px;">
@@ -69,6 +69,7 @@
                         display: flex;
                         justify-content: space-between;
                  }
+                 
         </style>
         <script>
                 
@@ -94,10 +95,38 @@
                                 const para2 = document.createElement("h3")
                                 const node2 = document.createTextNode(a)
                                 para2.appendChild(node2)
+
                                 names.appendChild(para)
                                 prices.appendChild(para1)
                                 quantities.appendChild(para2)
                                 
+                        }
+                }
+                function add1() {
+                        let names1 = document.getElementById("name")
+                        let prices1 = document.getElementById("price")
+                        let quantities1 = document.getElementById("div_for_quantity")
+                        let b = document.getElementById('quantity_pro2').value  
+                        if (b == 0) {
+                                alert('ban phai them so luong')
+                        }
+                        else if(b < 0){
+                                alert('error')
+                        }
+                        else{
+                                const para_pro2 = document.createElement('h3')
+                                const node_pro2 = document.createTextNode('Jacket2')
+                                para_pro2.appendChild(node_pro2)
+                                const para1_pro2 = document.createElement('h3')
+                                const node1_pro2 = document.createTextNode(b * 130+'$')
+                                para1_pro2.appendChild(node1_pro2)
+                                const para2_pro2 = document.createElement('h3')
+                                const node2_pro2 = document.createTextNode(b)
+                                para2_pro2.appendChild(node2_pro2)
+
+                                names1.appendChild(para_pro2)
+                                prices1.appendChild(para1_pro2)
+                                quantities1.appendChild(para2_pro2)
                         }
                 }
         </script>
