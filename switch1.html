@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <!-- bai1 -->
+        <!-- <label for="day">nhap so ngay</label>
+        <input type="text" id="day">
+        <button type="button" onclick="display()"> enter</button>
+        <p id="dayName"></p> -->
+        <!-- bai2 -->
+        <!-- <label for="dayInMonth">month: </label>
+        <input type="text" id="dayInMonth">
+        <button onclick="display()">enter</button>
+        <p id="text"></p> -->
+        <!-- bai3 -->
+        <div class="product">
+                <img src="https://cdn-images.farfetch-contents.com/off-white-big-bookish-skate-s-s-tee_20191132_51794807_400.jpg" alt="offwhite">
+                <p>Big Bookish Skate S/S Tee</p>
+                <p>$341</p>
+        </div>
+        <label for="star">danh gia so sao: </label>
+        <input type="number" name="" id="star">
+        <button onclick="display()">enter</button>
+        <p id="text"></p>
+        <script>
+                //NOTE - bai1
+                // function display() {
+                //         let a = parseInt(document.getElementById("day").value) 
+                //         let b
+                //         switch (a) {
+                //                 case 1:
+                //                         b = "chu nhat"
+                //                         break;
+                //                 case 2:
+                //                         b = "t2"
+                //                         break;
+                //                 case 3:
+                //                         b = "t3"
+                //                         break;
+                //                 case 4:
+                //                         b ="t4"
+                //                         break;
+                //                 case 5:
+                //                         b = "t5"
+                //                         break;
+                //                 case 6:
+                //                         b ="t6"
+                //                         break;
+                //                 case 7:
+                //                         b ="t7"
+                //                         break;
+                //                 default:
+                //                         b="error"
+                //                         break;
+                //         }
+                //         document.getElementById('dayName').innerHTML = b;
+                // }
+                
+                //NOTE - bai2
+                // function display() {
+                //         let a = parseInt(document.getElementById('dayInMonth').value) 
+                //         let b
+                //         switch (a) {
+                //                 case 1:
+                //                         b = "31 days"
+                //                         break;
+                //                 case 2:
+                //                         b = "29 days"
+                //                         break;
+                //                 case 3:
+                //                         b = "31 days"
+                //                         break;
+                //                 case 4:
+                //                         b = "30 days"
+                //                         break;
+                //                 case 5:
+                //                         b = "31 days"
+                //                         break;
+                //                 case 6:
+                //                         b = "30 days"
+                //                         break;
+                //                 case 7:
+                //                         b = "31 days"
+                //                         break;
+                //                 case 8:
+                //                         b = "30 days"
+                //                         break;
+                //                 case 9:
+                //                         b = "31 days"
+                //                         break;
+                //                 case 10:
+                //                         b = "30 days"
+                //                         break;
+                //                 case 11:
+                //                         b = "31 days"
+                //                         break;
+                //                 case 12:
+                //                         b = "30 days"
+                //                         break;
+                //                 default:
+                //                         b = "error"
+                //                         break;
+                //         }
+                //         document.getElementById("text").innerHTML = b
+                // }
+
+                function display() {
+                                let a = parseInt( document.getElementById('star').value)
+                                let b
+                                switch (a) {
+                                        case 1:
+                                                b = "ban danh gia 1 sao"
+                                                break;
+                                        case 2:
+                                                b = "ban danh gia 2 sao"
+                                                break;
+                                        case 3:
+                                                b = "ban danh gia 3 sao"
+                                                break;
+                                        case 4:
+                                                b = "ban danh gia 4 sao"
+                                                break;
+                                        case 5:
+                                                b = "ban danh gia 5 sao"
+                                                break;
+                                        default:
+                                                b = "ban danh gia 0 sao"
+                                                break;
+                                }
+                                document.getElementById('text').innerHTML = b
+                        }
+
+        </script>
+</body>
+</html>

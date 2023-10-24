@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
 </head>
+
 <body>
-        <div class="all-product">
-                <div class="product">
-                        <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/449631/item/goods_56_449631.jpg?width=320" alt="jacket" class="jacketlight">
-                        <h1>120$</h1>
-                        <input type="number" class="quantity" id="quantity_pro1">
-                        <div class="btn">
-                                <input type="button" value="Add to cart" onclick="add()" style="height: 100px; width: 200px; border: none; border-radius: 30px;">
-                        </div>
-                </div>
-                <div class="product">
-                        <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/463243/item/vngoods_56_463243.jpg?width=320" alt="jacket" class="jacketlight">
-                        <h1>130$</h1>
-                        <input type="number" class="quantity" id="quantity_pro2">
-                        <div class="btn">
-                                <input type="button" value="Add to cart" onclick="add1()" style="height: 100px; width: 200px; border: none; border-radius: 30px;">
-                        </div>
-                </div>
-                <!-- <div class="product">
+       <div class="all-product">
+              <div class="product">
+                     <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/449631/item/goods_56_449631.jpg?width=320"
+                            alt="jacket" class="jacketlight">
+                     <h1>120$</h1>
+                     <input type="number" class="quantity" id="quantity_pro1">
+                     <div class="btn">
+                            <input type="button" value="Add to cart" onclick="add()"
+                                   style="height: 100px; width: 200px; border: none; border-radius: 30px;">
+                     </div>
+              </div>
+              <div class="product">
+                     <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/463243/item/vngoods_56_463243.jpg?width=320"
+                            alt="jacket" class="jacketlight">
+                     <h1>130$</h1>
+                     <input type="number" class="quantity" id="quantity_pro2">
+                     <div class="btn">
+                            <input type="button" value="Add to cart" onclick="add1()"
+                                   style="height: 100px; width: 200px; border: none; border-radius: 30px;">
+                     </div>
+              </div>
+              <!-- <div class="product">
                         <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/459619/item/vngoods_55_459619.jpg?width=320" alt=" jacket" class="jacketlight">
                         <h1>170$</h1>
                         <input type="number" class="quantity" id="quantity_pro3">
@@ -31,105 +37,111 @@
                                 <input type="button" value="Add to cart" onclick="add2()" style="height: 100px; width: 200px; border: none; border-radius: 30px;">
                         </div>
                 </div> -->
-        </div>
-        <!-- <div class="btn">
+       </div>
+       <!-- <div class="btn">
                 <input type="button" value="Add to cart" onclick="add()" style="height: 100px; width: 200px; border: none; border-radius: 30px;">
         </div> -->
-        <div id="haha">
-                <div id="name">
-                    <h1>Name</h1>    
-                </div>
-                <div id="price">
-                    <h1>Price</h1>
-                </div>
-                <div id="div_for_quantity">
-                    <h1>Quantity</h1>
-                </div>
-                
-        <style>
-                @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Quicksand&display=swap');
-                .all-product{
-                        display: flex;
-                        text-align: center;
-                }
-                .product{
-                        width: 800px;
-                }
-                .btn{
-                        text-align: center;
-                        margin-top: 50px;
-                }
-                h1{
-                        font-family: 'Quicksand', sans-serif;
-                }
-                button{
-                        font-family: 'Quicksand', sans-serif;
-                }
-                #haha{
-                        display: flex;
-                        justify-content: space-between;
-                 }
-                 
-        </style>
-        <script>
-                //NOTE - add to cart 
-                function add() {
-                        let names = document.getElementById("name")
-                        let prices = document.getElementById("price")
-                        let quantities = document.getElementById("div_for_quantity")
-                        
-                        let a = document.getElementById('quantity_pro1').value
-                        if (a == 0){
-                                alert('ban phai them so luong')
-                        }
-                        else if(a < 0){
-                                alert('error')
-                        }
-                        else{
-                                const para = document.createElement("h3")
-                                const node = document.createTextNode("Jacket1")
-                                para.appendChild(node)
-                                const para1 = document.createElement("h3")
-                                const node1 = document.createTextNode(a*100+"$")
-                                para1.appendChild(node1)
-                                const para2 = document.createElement("h3")
-                                const node2 = document.createTextNode(a)
-                                para2.appendChild(node2)
+       <div id="haha">
+              <div id="name">
+                     <h1>Name</h1>
+              </div>
+              <div id="price">
+                     <h1>Price</h1>
+              </div>
+              <div id="div_for_quantity">
+                     <h1>Quantity</h1>
+              </div>
 
-                                names.appendChild(para)
-                                prices.appendChild(para1)
-                                quantities.appendChild(para2)
-                                
-                        }
-                }
-                //NOTE - add to cart
-                function add1() {
-                        let names1 = document.getElementById("name")
-                        let prices1 = document.getElementById("price")
-                        let quantities1 = document.getElementById("div_for_quantity")
-                        let b = document.getElementById('quantity_pro2').value  
-                        if (b == 0) {
-                                alert('ban phai them so luong')
-                        }
-                        else if(b < 0){
-                                alert('error')
-                        }
-                        else{
-                                const para_pro2 = document.createElement('h3')
-                                const node_pro2 = document.createTextNode('Jacket2')
-                                para_pro2.appendChild(node_pro2)
-                                const para1_pro2 = document.createElement('h3')
-                                const node1_pro2 = document.createTextNode(b * 130+'$')
-                                para1_pro2.appendChild(node1_pro2)
-                                const para2_pro2 = document.createElement('h3')
-                                const node2_pro2 = document.createTextNode(b)
-                                para2_pro2.appendChild(node2_pro2)
+              <style>
+                     @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Quicksand&display=swap');
 
-                                names1.appendChild(para_pro2)
-                                prices1.appendChild(para1_pro2)
-                                quantities1.appendChild(para2_pro2)
-                        }
-                }
-        </script>
+                     .all-product {
+                            display: flex;
+                            text-align: center;
+                     }
+
+                     .product {
+                            width: 800px;
+                     }
+
+                     .btn {
+                            text-align: center;
+                            margin-top: 50px;
+                     }
+
+                     h1 {
+                            font-family: 'Quicksand', sans-serif;
+                     }
+
+                     button {
+                            font-family: 'Quicksand', sans-serif;
+                     }
+
+                     #haha {
+                            display: flex;
+                            justify-content: space-between;
+                     }
+              </style>
+              <script>
+                     //NOTE - add to cart 
+                     function add() {
+                            let names = document.getElementById("name")
+                            let prices = document.getElementById("price")
+                            let quantities = document.getElementById("div_for_quantity")
+
+                            let a = document.getElementById('quantity_pro1').value
+                            if (a == 0) {
+                                   alert('ban phai them so luong')
+                            }
+                            else if (a < 0) {
+                                   alert('error')
+                            }
+                            else {
+                                   const para = document.createElement("h3")
+                                   const node = document.createTextNode("Jacket1")
+                                   para.appendChild(node)
+                                   const para1 = document.createElement("h3")
+                                   const node1 = document.createTextNode(a * 100 + "$")
+                                   para1.appendChild(node1)
+                                   const para2 = document.createElement("h3")
+                                   const node2 = document.createTextNode(a)
+                                   para2.appendChild(node2)
+
+                                   names.appendChild(para)
+                                   prices.appendChild(para1)
+                                   quantities.appendChild(para2)
+
+                            }
+                     }
+                     //NOTE - add to cart
+                     function add1() {
+                            let names1 = document.getElementById("name")
+                            let prices1 = document.getElementById("price")
+                            let quantities1 = document.getElementById("div_for_quantity")
+                            let b = document.getElementById('quantity_pro2').value
+                            if (b == 0) {
+                                   alert('ban phai them so luong')
+                            }
+                            else if (b < 0) {
+                                   alert('error')
+                            }
+                            else {
+                                   const para_pro2 = document.createElement('h3')
+                                   const node_pro2 = document.createTextNode('Jacket2')
+                                   para_pro2.appendChild(node_pro2)
+                                   const para1_pro2 = document.createElement('h3')
+                                   const node1_pro2 = document.createTextNode(b * 130 + '$')
+                                   para1_pro2.appendChild(node1_pro2)
+                                   const para2_pro2 = document.createElement('h3')
+                                   const node2_pro2 = document.createTextNode(b)
+                                   para2_pro2.appendChild(node2_pro2)
+
+                                   names1.appendChild(para_pro2)
+                                   prices1.appendChild(para1_pro2)
+                                   quantities1.appendChild(para2_pro2)
+                            }
+                     }
+              </script>
 </body>
+
 </html>
