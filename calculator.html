@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculator</title>
+        <style>
+                .calculator{
+                        display: flex;
+                }
+                .calculation{
+                        display: flex;
+                        flex-direction: column;
+                }
+                .btn{
+                        width: 60px;
+                        height: 70px;
+                }
+        </style>
+</head>
+<body>
+        <div class="calculator">
+                <div class="input">
+                        <input type="text"  id="number1" placeholder="Nhap so thu 1" class="number"> 
+                        <input type="text"  id="number2" placeholder="Nhap so thu 2" class="number">
+                </div>
+                <div class="calculation">
+                        <input type="button" value="+" onclick="plus()" class="btn">
+                        <input type="button" value="-" onclick="minus()" class="btn">
+                        <input type="button" value="*" onclick="time()" class="btn">
+                        <input type="button" value="/" onclick="divide()" class="btn">
+                </div>
+                
+        </div>
+        <div class="result">
+                        <p id="result"></p>
+        </div>
+        <script>
+                function plus() {
+                        let num1 = parseFloat(document.getElementById('number1').value)
+                        let num2 = parseFloat(document.getElementById("number2").value)
+
+                        if (!isNaN(num1) && !isNaN(num2)) {
+                                document.getElementById('result').textContent = "Ket qua la: " + (num1 + num2)
+                        } else {
+                                document.getElementById('result').textContent = "Error"
+                        }
+                }
+                function minus() {
+                        let num1 = parseFloat(document.getElementById('number1').value)
+                        let num2 = parseFloat(document.getElementById("number2").value)
+
+                        if (!isNaN(num1) && !isNaN(num2)) {
+                                document.getElementById('result').textContent = "Ket qua la: " + (num1 - num2)
+                        } else {
+                                document.getElementById('result').textContent = "Error"
+                        }
+                }
+                function time() {
+                        let num1 = parseFloat(document.getElementById('number1').value)
+                        let num2 = parseFloat(document.getElementById("number2").value)
+
+                        if (!isNaN(num1) && !isNaN(num2)) {
+                                document.getElementById('result').textContent = `Ket qua la: ${num1*num2}`
+                        } else {
+                                document.getElementById('result').textContent = "Error"
+                        }
+                }
+                function divide() {
+                        let num1 = parseFloat(document.getElementById('number1').value)
+                        let num2 = parseFloat(document.getElementById("number2").value)
+
+                        if (!isNaN(num1) && !isNaN(num2)) {
+                                document.getElementById('result').textContent = "Ket qua la: " + (num1 / num2)
+                        } else {
+                                document.getElementById('result').textContent = "Error"
+                        }
+                }
+        </script>
+</body>
+</html>

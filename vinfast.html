@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xe vinfast</title>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Mulish:ital,wght@1,900&family=Quicksand&display=swap');
+                h1{
+                        font-family: mulish;
+                        line-height: 6px;
+                }
+                img{
+                        width: 1000px;
+                }
+                .btnChangeColor{
+                        height: 50px;
+                        width: 50px;
+                        border: none ;
+                }
+                .imgcar{
+                        display: flex;
+                }
+                #nameColor{
+                        font-family: mulish;
+                }
+        </style>
+</head>
+<body>
+        <div class="namecar">
+                <h1>VF8</h1>
+                <h1> Đỉnh cao công nghệ</h1>
+        </div>
+        <div class="imgcar">
+                <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4d54f126/images/PDP/vf8/img-CE1H.webp" alt="Deep Ocean" id="mainImg">
+                <h2 id="nameColor">Deep Ocean</h2>
+        </div>
+        <div class="div-changecolor">
+                <button onclick="changeColor('https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4d54f126/images/PDP/vf8/img-CE1H.webp', 'Deep Ocean', )" class="btnChangeColor" style="background-color: #30473f;"></button>
+                <button onclick="changeColor('https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4d54f126/images/PDP/vf8/img-CE14.webp', 'Neptune Grey')" class="btnChangeColor" style="background-color: gray;"></button>
+                <button onclick="changeColor('https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4d54f126/images/PDP/vf8/img-CE1M.webp', 'Crimson Red')" class="btnChangeColor" style="background-color: #b53a3b;"></button>
+                <button onclick="changeColor('https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4d54f126/images/PDP/vf8/img-CE1N.webp', ' Vinfast blue')" class="btnChangeColor" style="background-color: #2f5886;"></button>
+        </div>
+        <script>
+                function changeColor(color,text,) {
+                        document.getElementById('mainImg').src = color
+                        document.getElementById('nameColor').textContent = text
+                }
+
+        </script>
+</body>
+</html>

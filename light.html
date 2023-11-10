@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <div class="remote">
+                <button onclick="turn_on_light()" class="sun"><img src="/pngegg (4).png" alt="sun" style="height: 100px;"></button>
+                <button onclick="turn_off_light()" class="moon"><img src="/pngegg (3).png" alt="moon" style="height: 100px;"></button>
+        </div>
+       
+        <style>
+                .sun{
+                        height: 0px;
+                        
+                        
+                }
+                .moon{
+                        height: 0;
+                       
+                }
+                .remote{
+                        background-color: black;
+                        height: 500px;
+                        width: 360px;
+                }
+        </style>
+        <script>
+                function turn_on_light() {
+                        document.body.style.backgroundColor = "yellow"
+                }
+                function turn_off_light() {
+                        document.body.style.backgroundColor = "black"
+                }
+        </script>
+</body>
+</html>
