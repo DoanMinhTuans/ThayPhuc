@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <script>
+                let people = [
+                        {
+                                id: 1,
+                                name: "Phat",
+                                nickname: "PhatBD",
+                                age: 15,
+                                grade: 10
+                        },
+                        {
+                                id: 2,
+                                name: "Phat",
+                                nickname: "PhatXoac",
+                                age: 15,
+                                grade: 10
+                        },
+                        {
+                                id: 3,
+                                name: "Thong",
+                                nickname: "ThongCu",
+                                age: 15,
+                                grade: 10
+                        }
+                ]
+                function peopleHandler(people) {
+                        return `Toi ten la: ${people.name}`
+                                
+                        
+                }
+                let newInformation = people.map(peopleHandler)
+                console.log(newInformation)
+        </script>
+</body>
+</html>
