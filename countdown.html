@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <label for="countdown"><input type="number" id="secondValue"></label>
+        <input type="button" value="Enter" onclick="btnCountDown()">
+        <p id="display"><span>countdown:</span></p>
+
+        <script>
+                function btnCountDown() {
+                        let value = document.getElementById('secondValue').value //NOTE - Lấy giá trị của input secondvalue
+                        if (!isNaN(value) && value > 0) { //NOTE - xét giá trị lớn hơn 0 và phải có số
+                                let countdownInt = parseInt(value) //NOTE - chuyển từ string sang Int
+                                let displayNumber = document.getElementById('display') 
+
+                               let xuli = setInterval(function () {
+                                        countdownInt-- //NOTE - trừ di 1 giá trị
+                                        displayNumber.innerText = countdownInt //NOTE - hiện giá trị của input secondvalue
+                                        if (countdownInt < 0) { //NOTE - xét gía trị nếu bé hơn 0 thì hàm p hiện ra chữ end
+                                                clearInter      val(xuli) //NOTE - Không bị lag
+                                                document.getElementById('display').innerHTML = "end" //NOTE - hiện ra chữ end ở thẻ p
+                                        }
+                                },1000)
+                        } else { //NOTE - nếu giá trị value bé hơn không vào không có giá trị thì hiện ở thẻ p là fail
+                                document.getElementById('display').innerHTML = "Fail"
+                        }
+                }
+        </script>
+</body>
+</html>

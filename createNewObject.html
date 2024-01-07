@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <div class="create">
+                <button onclick="createNewObject()">Create</button>
+                <input type="text" id="newobject">
+        </div>
+        <div class="add">
+                <button onclick="addInfo()">Add</button>
+                <input type="text" id="information">
+        </div>
+        <div class="show">
+                <button onclick="showInfo()">Show</button>
+                <p id="showvalue"></p>
+        </div>
+        <script>
+                var object = {}
+                function createNewObject(){
+                        var nameObject = document.getElementById('newobject').value
+                        object.name = nameObject
+                        
+                }
+                function addInfo() {
+                        var infObject = document.getElementById('information').value
+                        object.infObject = infObject
+                        console.log(object)
+                }
+        </script>
+</body>
+</html>

@@ -6,37 +6,25 @@
         <title>Document</title>
 </head>
 <body>
+        
         <script>
-                let people = [
-                        {
-                                id: 1,
-                                name: "Phat",
-                                nickname: "PhatBD",
-                                age: 15,
-                                grade: 10
-                        },
-                        {
-                                id: 2,
-                                name: "Phat",
-                                nickname: "PhatXoac",
-                                age: 15,
-                                grade: 10
-                        },
-                        {
-                                id: 3,
-                                name: "Thong",
-                                nickname: "ThongCu",
-                                age: 15,
-                                grade: 10
-                        }
-                ]
-                function peopleHandler(people) {
-                        return `Toi ten la: ${people.name}`
-                                
+                const bike = {
+                        brand: "Trek",
+                        name: "Madone SLR 7 [Gen 7]",
+                        frame: "800 series OCVL Carbon",
+                        lip: "Shimano Ultegra R8100 11-30  12 tốc độ",
+                        tayde: "Shimano Ultegra R8170 Di2, 12 tốc độ",
+                        detruoc: "Shimano Ultegra R8150 Di2, hàn cố định, xích đu xuống",
+                        desau: "Shimano Ultegra R8150 Di2",
+                        weight: "56 = 7,48 kg / 16,51 lb",
+                        frontwheel: "Bontrager Aeolus Pro 51, OCLV Carbon, Sẵn sàng không săm, trục qua 100x12mm",
+                        backwheel: "Bontrager Aeolus Pro 51, Sẵn sàng không săm, Trục tự do Shimano 11/12 tốc độ, trục qua 142 × 12 mm",
+                }
+                function bike(brand,name,frame,lip,tayde,detruoc,desau,weight,frontwheel,backwheel) {
+                        this.brand = brand
+                        this.name = name
                         
                 }
-                let newInformation = people.map(peopleHandler)
-                console.log(newInformation)
         </script>
 </body>
-</html>
+</html> 

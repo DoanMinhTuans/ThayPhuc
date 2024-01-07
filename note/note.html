@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>note</title>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+                
+                body{
+                        font-family: 'Kanit', sans-serif;
+                }
+                
+        </style>
+</head>
+<body>
+        <input type="text" placeholder="Enter your text" id="text">
+        <input type="button" value="Add text" onclick="addNote()">
+        <h1>Your Note</h1>
+        
+        <div id="allText">
+                
+                <div id="input" class="div-input">
+                        
+                </div>
+                <div id="deleteBtn" onclick="deleteNote()">
+
+                </div>
+        </div>
+        <button onclick="randomBgColor()">Change Background Color</button>
+       
+        
+        <script src="/note/note.js"></script>
+</body>
+</html>

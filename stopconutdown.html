@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <button  onclick="start()">start</button>
+        <button onclick="stop()">stop</button>
+        <button onclick="reset()">reset</button>
+        <h1 id="displayCountdown">00:00:00</h1>
+
+
+        <script>
+                
+                let second = 0
+                let minute = 0
+                let hour = 0
+                function update(){
+                        second++
+                        if (second === 60) {
+                                minute++
+                                second = 0
+                        }
+                        if (minute === 60) {
+                                hour++
+                                minute = 0
+                        }
+                        const displayTime = `${hour}:${minute}:${second}`
+                        document.getElementById('displayCountdown').innerHTML = displayTime
+                }
+                function start() {
+                        setInterval(update(),1000)
+                        
+                }
+
+        </script>
+</body>
+</html>

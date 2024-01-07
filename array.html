@@ -6,12 +6,11 @@
         <title>Array</title>
 </head>
 <body>
-       
-        <!-- <p id="array"></p>
+        <p id="array"></p>
         <input type="text" id="answer">
-        <input type="button" onclick="add_fruits()" value="enter"></input>
+        <!-- <input type="button" onclick="add_fruits()" value="enter"></input> -->
         <input type="button" onclick="del_fruits()" value="enter"></input>
-        <p id="newArray"></p> --> 
+        <p id="newArray"></p> 
         
         <script>
                 //NOTE - bai8
@@ -28,24 +27,19 @@
                 //         console.log(fruits)
                 // }
                 //NOTE - bai9
-                // fruits = ["cam", "xoai", "tao", "nho", "sau rieng"]
-                // document.getElementById("array").innerHTML = fruits
-                // function del_fruits() {
-                //         let a = document.getElementById("answer").value
-                //         if (a === "Y") {
-                //                 b = prompt("ban muon xoa trai cay gi?")
-                //                 c = prompt("vi tri cua no?")
-                //                 fruits.splice(c, 1)
-                //                 document.getElementById("newArray").innerHTML = fruits
-                //         } else {
-                //                 document.getElementById("newArray").innerHTML = "cam on"
-                //         }
-                        
-                // }
-
-                
-
-                
+                fruits = ["cam", "xoai", "tao", "nho", "sau rieng"]
+                document.getElementById("array").innerHTML = fruits
+                function del_fruits() {
+                        let a = document.getElementById("answer").value
+                        if (a === "Y") {        
+                                b = prompt("ban muon xoa trai cay gi?")
+                                c = prompt("vi tri cua no?")
+                                fruits.splice(c, 1)
+                                document.getElementById("newArray").innerHTML = fruits
+                        } else {
+                                document.getElementById("newArray").innerHTML = "cam on"
+                        }
+                }
         </script>
 </body>
 </html>
