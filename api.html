@@ -4,11 +4,52 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+                .header{
+                        width: 100px;
+                        
+                }
+                .info{
+                        margin-top: 20px;
+                }
+                .btn{
+                        margin-top: 10px;
+                }
+        </style>
 </head>
 <body>
-
+        <div class="header">
+                <input type="text" placeholder="Name" id="hovaten" class="info">
+                <input type="text" placeholder="Birthday" id="ngaysinh" class="info">
+                <input type="text" placeholder="Address" id="diachi" class="info">
+                <input type="text" placeholder="Email" id="diachimail" class="info">
+                <input type="text" placeholder="Password" id="matkhau" class="info">
+        </div>
+                <input type="button" value="Download File" onclick="saveFile()" class="btn">
         <script>
-                
+                function saveFile(){
+                        let name = "Full name: " + document.getElementById('hovaten').value
+                        let birth = "Birth: " + document.getElementById('ngaysinh').value
+                        let address = "Address: " + document.getElementById('diachi').value
+                        let mail = "Email: " + document.getElementById('diachimail').value
+                        let pass = "password: " + document.getElementById('matkhau').value
+
+                        if (name == '' || birth == '' || address == '' || mail == '' || pass == '') {
+                                alert("NO")
+                                return;
+                        } else {
+                                let combinedData = `${name} \n ${birth} \n ${address} \n ${mail} \n ${pass}`;
+                                let blob = new Blob([combinedData], {type: 'text/plain'});
+
+                                let url = window.URL.createObjectURL(blob);
+                                let a = document.createElement('a');
+                                a.href = url;
+                                a.download = 'du lieu ne.txt';
+                                a.click();
+                        }
+                }
         </script>
+
+
 </body>
 </html>
